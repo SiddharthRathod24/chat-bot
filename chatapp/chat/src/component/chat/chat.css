@@ -1,0 +1,121 @@
+/* Improved Chat Page UI */
+.ChatPage {
+    background-color: black;
+    width: 100%;
+    height: 45vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.ChatContainer {
+    background-color: #1e1e1e;
+    width: 90%;
+    max-width: 500px;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    padding: 10px;
+}
+
+.ChatContainer h1 {
+    background-color: #ff4757;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    margin: 0;
+    font-size: 1.8rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.MessageBox {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #252525;
+    border-radius: 10px;
+}
+
+.MessageBox p {
+    padding: 12px 16px;
+    border-radius: 8px;
+    max-width: 75%;
+    word-wrap: break-word;
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.MessageBox p:last-child {
+    align-self: flex-end;
+    background-color: #ff4757;
+    color: white;
+}
+
+.MessageBox p:nth-child(odd) {
+    align-self: flex-start;
+    background-color: #2f3640;
+    color: white;
+}
+
+.InputBox {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    background-color: #1e1e1e;
+    border-top: 2px solid #333;
+    gap: 10px;
+}
+
+.InputBox input {
+    flex: 1;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 1rem;
+    background-color: #2f2f2f;
+    color: white;
+    transition: 0.3s ease-in-out;
+}
+
+.InputBox input:focus {
+    background-color: #3a3a3a;
+}
+
+.InputBox button {
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #ff4757;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    font-size: 1rem;
+}
+
+.InputBox button:hover {
+    background-color: #e84141;
+}
+
+.MessageBox::-webkit-scrollbar {
+    width: 6px;
+}
+
+.MessageBox::-webkit-scrollbar-thumb {
+    background: #ff4757;
+    border-radius: 10px;
+}
+
+.MessageBox::-webkit-scrollbar-track {
+    background: #333;
+}
